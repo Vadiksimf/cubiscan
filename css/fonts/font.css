@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Laqonic4FUnicase-Italic';
+  src: url('Laqonic4FUnicase-Italic.eot');
+  src: url('Laqonic4FUnicase-Italic.eot?#iefix') format('embedded-opentype'),
+       url('Laqonic4FUnicase-Italic.svg#Laqonic4FUnicase-Italic') format('svg'),
+       url('Laqonic4FUnicase-Italic.ttf') format('truetype'),
+       url('Laqonic4FUnicase-Italic.woff') format('woff'),
+       url('Laqonic4FUnicase-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

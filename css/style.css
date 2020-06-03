@@ -1,0 +1,281 @@
+/*----------Colors---------------------*/
+:root {
+  --color-primary: #f42c37;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+  --color-grey-light-1: #f0f0f0;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #dfdfdf;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #4f4f4f;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-white: #fff;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-ligth: 0 2rem 5rem rgba(0,0,0,.06);
+  --border-bottom: 1px solid var(--color-grey-light-2); }
+
+/*----------FONTS---------------------*/
+/*----------Queries---------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: '$font-primary';
+  font-weight: normal;
+  line-height: 1;
+  font-size: 1.6rem;
+  color: var(--color-grey-dark-1);
+  background-color: var(--color-white);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'Laqonic4FUnicase';
+  src: url("./fonts/Laqonic4FUnicase.eot");
+  src: url("./fonts/Laqonic4FUnicase.eot?#iefix") format("embedded-opentype"), url("./fonts/Laqonic4FUnicase.svg#Laqonic4FUnicase") format("svg"), url("./fonts/Laqonic4FUnicase.ttf") format("truetype"), url("./fonts/Laqonic4FUnicase.woff") format("woff"), url("./fonts/Laqonic4FUnicase.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Laqonic4FUnicase-Medium';
+  src: url("./fonts/Laqonic4FUnicase-Medium.eot");
+  src: url("./fonts/Laqonic4FUnicase-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Laqonic4FUnicase-Medium.svg#Laqonic4FUnicase-Medium") format("svg"), url("./fonts/Laqonic4FUnicase-Medium.ttf") format("truetype"), url("./fonts/Laqonic4FUnicase-Medium.woff") format("woff"), url("./fonts/Laqonic4FUnicase-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Laqonic4FUnicase-Italic';
+  src: url("./fonts/Laqonic4FUnicase-Italic.eot");
+  src: url("./fonts/Laqonic4FUnicase-Italic.eot?#iefix") format("embedded-opentype"), url("./fonts/Laqonic4FUnicase-Italic.svg#Laqonic4FUnicase-Italic") format("svg"), url("./fonts/Laqonic4FUnicase-Italic.ttf") format("truetype"), url("./fonts/Laqonic4FUnicase-Italic.woff") format("woff"), url("./fonts/Laqonic4FUnicase-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl-300';
+  src: url("./fonts/MuseoSansCyrl-300.eot");
+  src: url("./fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("./fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300") format("svg"), url("./fonts/MuseoSansCyrl-300.ttf") format("truetype"), url("./fonts/MuseoSansCyrl-300.woff") format("woff"), url("./fonts/MuseoSansCyrl-300.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl-500';
+  src: url("./fonts/MuseoSansCyrl-500.eot");
+  src: url("./fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("./fonts/MuseoSansCyrl-500.svg#MuseoSansCyrl-500") format("svg"), url("./fonts/MuseoSansCyrl-500.ttf") format("truetype"), url("./fonts/MuseoSansCyrl-500.woff") format("woff"), url("./fonts/MuseoSansCyrl-500.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.container {
+  max-width: 117rem;
+  margin: 0 auto;
+  background-color: var(--color-white); }
+
+.intro {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%; }
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 73rem;
+  background: linear-gradient(to right bottom, var(--color-grey-light-3), var(--color-grey-light-1));
+  border-radius: 3rem;
+  padding: 10rem; }
+
+.teaser {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 10rem; }
+  .teaser-box {
+    height: 34rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 37rem;
+    padding: 3.5rem 3rem 3rem;
+    transition: box-shadow .3s; }
+    .teaser-box:not(:last-of-type) {
+      margin-right: 3rem; }
+    .teaser-box__1 {
+      background: url(../img/teaser-bg-1.png) no-repeat top right, #fec72f;
+      border-radius: 3rem; }
+      .teaser-box__1:hover {
+        box-shadow: 0 2rem 2rem 1rem rgba(254, 199, 47, 0.5); }
+    .teaser-box__2 {
+      background: url(../img/teaser-bg-2.png) no-repeat top right, #2dd06f;
+      border-radius: 3rem; }
+      .teaser-box__2:hover {
+        box-shadow: 0 2rem 2rem 1rem rgba(45, 208, 111, 0.5); }
+    .teaser-box__3 {
+      background: url(../img/teaser-bg-3.png) no-repeat top right, #1789ff;
+      border-radius: 3rem; }
+      .teaser-box__3:hover {
+        box-shadow: 0 2rem 2rem 1rem rgba(23, 137, 255, 0.5); }
+
+.heaer {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--border-bottom);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem; }
+  @media only screen and (max-width: 31.25em) {
+    .heaer {
+      padding: 0;
+      flex-wrap: wrap;
+      height: 12rem;
+      align-content: space-around; } }
+
+.conte {
+  display: flex;
+  min-height: 50rem; }
+  @media only screen and (max-width: 56.25em) {
+    .conte {
+      flex-direction: column; } }
+
+.sideb {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.hotel-iew {
+  background-color: #fff;
+  flex: 1; }
+
+.detil {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--border-bottom); }
+  @media only screen and (max-width: 56.25em) {
+    .detil {
+      padding: 3rem; } }
+  @media only screen and (max-width: 40em) {
+    .detil {
+      flex-direction: column; } }
+  @media only screen and (max-width: 27.5em) {
+    .detil {
+      padding: 1rem; } }
+
+.descriptn {
+  background-color: #fff;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  box-shadow: var(--shadow-ligth); }
+  @media only screen and (max-width: 56.25em) {
+    .descriptn {
+      margin-right: 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .descriptn {
+      margin-right: 0;
+      margin-bottom: 2rem; } }
+
+.user-revis {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.h1 {
+  display: block;
+  font-family: "Laqonic4FUnicase-Medium", sans-serif;
+  font-size: 18rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  letter-spacing: 0.25rem;
+  font-weight: 300; }
+  .h1__slider {
+    z-index: 0; }
+
+.h2 {
+  display: block;
+  font-family: "Laqonic4FUnicase", sans-serif;
+  font-size: 6.6rem;
+  letter-spacing: 0.1rem; }
+  .h2__teaser {
+    font-family: "Laqonic4FUnicase-Italic", sans-serif;
+    font-size: 6rem;
+    color: rgba(255, 255, 255, 0.6); }
+
+.h3 {
+  display: block;
+  font-family: "Laqonic4FUnicase", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem; }
+
+.p {
+  font-family: "MuseoSansCyrl-300", sans-serif;
+  line-height: 1.6; }
+  .p__slider {
+    width: 40%;
+    margin: auto 0; }
+
+.link-button {
+  display: inline-block;
+  color: var(--color-white);
+  font-family: "MuseoSansCyrl-300", sans-serif;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer; }
+  .link-button__teaser-1 {
+    background-color: #fff;
+    color: #fec72f; }
+  .link-button__teaser-2 {
+    background-color: #fff;
+    color: #2dd06f; }
+  .link-button__teaser-3 {
+    background-color: #fff;
+    color: #1789ff; }
+
+.logo {
+  height: 4.8rem;
+  width: 24.4rem; }
+
+.navigation {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+  .navigation-list {
+    display: flex;
+    list-style: none;
+    align-items: center; }
+  .navigation-item > * {
+    text-decoration: none;
+    color: var(--color-dark-1);
+    font-family: "MuseoSansCyrl-300", sans-serif; }
+  .navigation-item:not(:last-of-type) {
+    padding-right: 4.2rem; }
+
+.slider__image {
+  position: absolute;
+  top: 0;
+  right: 0; }
