@@ -1,0 +1,150 @@
+////////////////////////////////////////////////////
+//----------------LOGO-----------------------------
+
+.logo {
+    height: 4.8rem;
+    width: 24.4rem;
+}
+
+////////////////////////////////////////////////////
+//----------------Navigation------------------------
+
+.navigation {
+    margin: 2rem auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    &-list {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    &-item > * {
+        text-decoration: none;
+        color: var(--color-dark-1);
+        font-family: $font-secondary;
+    }
+
+    &-item:not(:last-of-type) {
+        padding-right: 4.2rem;
+    }
+}
+
+////////////////////////////////////////////////////
+//----------------Slider-------------------------
+
+.slider {
+
+    &__image{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+//-------------------------ICONS BLOCK------------------------
+
+.icons {
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+    
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            height: 8rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+.video {
+
+    display: flex;
+
+    margin-bottom: 19rem;
+
+    &-text-box {
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 3rem;
+
+        &__span {
+            font-family: $font-primary-italic;
+            font-size: 5rem;
+        }
+    }
+
+    &-video-box {
+        flex: 0 0 65.8119%;
+        height: 47.4rem;
+        position: relative;
+        border-radius: 3rem;
+
+        overflow: hidden;
+
+        &__poster {
+            position: absolute;
+            z-index: 1;
+
+            top: 0;
+            left: 0;
+            transform: scale(1.05);
+        }
+
+        &__btn-play {
+            display: block;
+            margin: auto;
+            width: 6.7rem;
+            height: 6.7rem;
+            border-radius: 50%;
+            border: none;
+            background: var(--color-grey-dark-4);
+            position: relative;
+            opacity: .8;
+    
+            z-index: 10;
+        
+            /* Выравнивани блока по центру */
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__btn-play:before {
+            content: "";
+            width: 10rem;
+            height: 10rem;
+            background: var(--color-grey-dark-4);
+            opacity: 0.5;
+            position: absolute; /* Делает элемент видимым */
+            border-radius: 50%;
+            left: -16px;
+            top: -16px;
+            animation: pulse 1.5s ease-in-out 0.5s infinite;
+        }
+
+        &__play-img {
+            position: relative;
+            height: 2rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-35%, -50%);
+        }
+    }
+}
+
+
+

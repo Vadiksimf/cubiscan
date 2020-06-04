@@ -1,0 +1,184 @@
+.container {
+    max-width: 117rem;
+    margin: 0 auto;
+    background-color: var(--color-white);
+}
+
+.intro {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    height: 73rem;
+    background: //url(../img/img.png) no-repeat top right, 
+                linear-gradient(to right bottom, var(--color-grey-light-3), var(--color-grey-light-1));
+    border-radius: 3rem;
+    padding: 10rem;
+}
+
+.teaser {
+
+    display: flex;
+
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+
+
+    &-box {
+        height: 34rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 37rem;
+
+        padding: 3.5rem 3rem 3rem;
+
+        &:not(:last-of-type) {
+            margin-right: 3rem;
+        }
+
+        transition: box-shadow .3s;
+
+        &__1{
+            background: url(../img/teaser-bg-1.png) no-repeat top right, rgb(254, 199, 47);
+            border-radius: 3rem;
+
+            &:hover {
+                box-shadow: 0 2rem 2rem 1rem rgba(254, 199, 47, 0.5);
+            }
+        }
+
+        &__2{
+            background: url(../img/teaser-bg-2.png) no-repeat top right, rgb(45, 208, 111);
+            border-radius: 3rem; 
+
+            &:hover {
+                box-shadow: 0 2rem 2rem 1rem rgba(45, 208, 111, 0.5);
+            }
+        }
+
+        &__3{
+            background: url(../img/teaser-bg-3.png) no-repeat top right, rgb(23, 137, 255);
+            border-radius: 3rem; 
+
+            &:hover {
+                box-shadow: 0 2rem 2rem 1rem rgba(23, 137, 255, 0.5);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.heaer {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--border-bottom);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem;
+
+    
+    @media only screen and (max-width: $bp-tiny) {
+        padding: 0;
+        flex-wrap: wrap;
+        height: 12rem;
+        align-content: space-around; // Выравнивание блоков между собой при переносе
+    }
+
+}
+
+.conte {
+    display: flex;
+    min-height: 50rem;
+
+    @media only screen and (max-width: $bp-middle) {
+       flex-direction: column;
+    }
+}
+
+.sideb {
+    background-color: var(--color-grey-dark-1);
+
+    flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.hotel-iew {
+
+    background-color: #fff;
+
+    flex: 1; // flex-grow: 1;
+}
+
+
+.detil {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--border-bottom);
+
+    @media only screen and (max-width: $bp-middle) {
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: $bp-tinyest) {
+        padding: 1rem;
+    }
+}
+
+.descriptn {
+    background-color: #fff;
+    flex: 0 0 60%;  // Контейнер занимает 60% пространства
+    margin-right: 4.5rem;
+    padding: 3rem;
+    box-shadow: var(--shadow-ligth);
+
+    @media only screen and (max-width: $bp-middle) {
+        margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.user-revis {
+    flex: 1;  // Контейнер занимает оставшееся пространстро, в блоке detail
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
