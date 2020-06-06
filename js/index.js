@@ -1,4 +1,4 @@
-
+// VIDEO PLAY
 $(function() {
 
     $("#video__play").click(function() {

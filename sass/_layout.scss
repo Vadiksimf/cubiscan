@@ -1,13 +1,14 @@
 .container {
     max-width: 117rem;
     margin: 0 auto;
-    background-color: var(--color-white);
+    // background-color: var(--color-white);
 }
 
 .intro {
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: 0 50%;
+
 }
 
 .slider {
@@ -32,51 +33,50 @@
     margin-top: 3rem;
     margin-bottom: 10rem;
 
+    background-image: url(../img/bg/BG-Mask-Group-2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
-    &-box {
-        height: 34rem;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 37rem;
-
-        padding: 3.5rem 3rem 3rem;
-
-        &:not(:last-of-type) {
-            margin-right: 3rem;
-        }
-
-        transition: box-shadow .3s;
-
-        &__1{
-            background: url(../img/teaser-bg-1.png) no-repeat top right, rgb(254, 199, 47);
-            border-radius: 3rem;
-
-            &:hover {
-                box-shadow: 0 2rem 2rem 1rem rgba(254, 199, 47, 0.5);
-            }
-        }
-
-        &__2{
-            background: url(../img/teaser-bg-2.png) no-repeat top right, rgb(45, 208, 111);
-            border-radius: 3rem; 
-
-            &:hover {
-                box-shadow: 0 2rem 2rem 1rem rgba(45, 208, 111, 0.5);
-            }
-        }
-
-        &__3{
-            background: url(../img/teaser-bg-3.png) no-repeat top right, rgb(23, 137, 255);
-            border-radius: 3rem; 
-
-            &:hover {
-                box-shadow: 0 2rem 2rem 1rem rgba(23, 137, 255, 0.5);
-            }
-        }
-    }
 }
+
+.products {
+
+    min-height: 10.45rem;
+    width: 100%;
+    background-image: url(../img/bg/Group-goods.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
