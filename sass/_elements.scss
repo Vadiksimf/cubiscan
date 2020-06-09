@@ -59,8 +59,14 @@
     }
 
     &__footer {
-        //color: var(--color-white);
         color: var(--color-grey-dark-3);
+        transition: all .5s;
+
+        &-copy {
+            flex: 0 0 100%;
+            color: var(--color-grey-light-5);
+
+        }
     }
 }
 
@@ -147,3 +153,47 @@
         }
     }
 }
+
+
+////////////////////////////////////////////////////
+//----------------ICONS SVG-------------------------
+
+.svg {
+    width: 3rem;
+    background-size: cover;
+    height: 0;
+    display: block;
+    padding: 0;
+    margin-right: 1.6rem;
+
+    padding-bottom: 25px;
+    background-color: rgba(255, 255, 255, .3);
+    transition: all .5s;
+
+    &:hover {
+        background-color: var(--color-primary);
+    }
+}
+
+.svg-youtube {
+    -webkit-mask: url(../img/icons/youtube.svg) no-repeat;
+    mask: url(../img/icons/youtube.svg) no-repeat;
+}
+
+.svg-linkedin {
+    -webkit-mask: url(../img/icons/linkedin.svg) no-repeat;
+    mask: url(../img/icons/linkedin.svg) no-repeat;
+}
+
+.svg-facebook {
+    -webkit-mask: url(../img/icons/facebook.svg) no-repeat;
+    mask: url(../img/icons/facebook.svg) no-repeat;
+}
+
+
+
+
+
+
+
+
