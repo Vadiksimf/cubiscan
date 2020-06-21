@@ -204,13 +204,18 @@
 //-------------------------PRODUCTS------------------------
 
 .products {
-    padding-top: 14.4rem;
+    //padding-top: 14.4rem;
     padding-bottom: 10rem;
 
      
+    .container {
+        padding-top: 14.4rem;
+        position: relative;
+    }
+
     &__title {
         position: absolute;
-        top: -5.74%;
+        top: -6.4%;
         right: 0;
 
         font-family: $font-primary-bold;
@@ -326,9 +331,8 @@
     
     display: flex;
     justify-content: space-between;
-    padding-top: 18.6rem;
+    //padding-top: 18.6rem;
     padding-bottom: 18.6rem;
-
 
     position: relative;
 
@@ -336,14 +340,18 @@
                 url(../img/bg/bg-testimonial-big.png) 0 0 no-repeat fixed;
     background-size: auto, cover;
 
+    .container {
+        padding-top: 18.6rem;
+        position: relative;
+    }
 
     &__title {
         position: absolute;
-        top:-2.6%;
+        top:-3.6%;
         left: 0;
         font-family: $font-primary;
         font-size: 12rem;
-        color: var(--color-white);;
+        color: var(--color-white);
     }
 
     &-box {

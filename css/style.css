@@ -287,7 +287,7 @@ a {
     color: #1789ff; }
 
 .svg {
-  width: 3rem;
+  width: 2.5rem;
   background-size: cover;
   height: 0;
   display: block;
@@ -436,11 +436,13 @@ a {
       box-shadow: 0 2rem 2rem 1rem rgba(23, 137, 255, 0.5); }
 
 .products {
-  padding-top: 14.4rem;
   padding-bottom: 10rem; }
+  .products .container {
+    padding-top: 14.4rem;
+    position: relative; }
   .products__title {
     position: absolute;
-    top: -5.74%;
+    top: -6.4%;
     right: 0;
     font-family: "Laqonic4FUnicase-Medium", sans-serif;
     font-size: 12rem;
@@ -511,14 +513,16 @@ a {
 .testimonial {
   display: flex;
   justify-content: space-between;
-  padding-top: 18.6rem;
   padding-bottom: 18.6rem;
   position: relative;
   background: url(../img/bg/bg-testimonial.png) 12% 2% no-repeat scroll, url(../img/bg/bg-testimonial-big.png) 0 0 no-repeat fixed;
   background-size: auto, cover; }
+  .testimonial .container {
+    padding-top: 18.6rem;
+    position: relative; }
   .testimonial__title {
     position: absolute;
-    top: -2.6%;
+    top: -3.6%;
     left: 0;
     font-family: "Laqonic4FUnicase", sans-serif;
     font-size: 12rem;
