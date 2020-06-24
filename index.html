@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cubiscan</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -167,7 +171,7 @@
         </div>
     </section>
 <!-- DIGITS -->
-    <section class="digits container">
+    <section id="waypoint-digits" class="digits container">
             <div class="digits-box">
                 <span class="digits-box__number">30</span>
                 <span class="digits-box__text">Years of experience</span>
@@ -186,26 +190,29 @@
             </div>
     </section>
 
+    <!-- TESTIMONIAL -->
+
     <section class="testimonial">
         <div class="container">
             <span class="testimonial__title">Testimonial</span>
-            <div class="testimonial-box">
-                <div class="testimonial-card">
-                    <img src="img/clients/img.jpg" alt="Buyer photo 1" class="testimonial-card__img">
-                    <h4 class="h4 testimonial-card__name">Vickerman Company,
-                        Randy Schuster, CEO</h4>
-                    <p class="p testimonial-card__p">We immediately started shipping over 900 shipments per employee, instead of 350.</p>
-                    <p class="p testimonial-card__p">We used to need eight employees dedicated to preparing shipments, now the Cubiscan supports just three employees. I estimate our daily savings to be approximately $800 per day.</p>
-                </div>
-                <div class="testimonial-card">
-                    <img src="img/clients/img2.jpg" alt="Buyer photo 2" class="testimonial-card__img">
-                    <h4 class="h4 testimonial-card__name">USA Fulfillment, Brett Moore, Vice President of Operations</h4>
-                    <p class="p testimonial-card__p">USA Fulfillment wanted to ensure that our clients receive the best possible shipping charges</p>
-                    <p class="p testimonial-card__p">The system increased our package manifesting by three times.</p>
-                </div>
-            </div>
+                        <div class="testimonial-box">
+                            <div class="testimonial-card">
+                                <img src="img/clients/img.jpg" alt="Buyer photo 1" class="testimonial-card__img">
+                                <h4 class="h4 testimonial-card__name">Vickerman Company,
+                                    Randy Schuster, CEO</h4>
+                                <p class="p testimonial-card__p">We immediately started shipping over 900 shipments per employee, instead of 350.</p>
+                                <p class="p testimonial-card__p">We used to need eight employees dedicated to preparing shipments, now the Cubiscan supports just three employees. I estimate our daily savings to be approximately $800 per day.</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <img src="img/clients/img2.jpg" alt="Buyer photo 2" class="testimonial-card__img">
+                                <h4 class="h4 testimonial-card__name">USA Fulfillment, Brett Moore, Vice President of Operations</h4>
+                                <p class="p testimonial-card__p">USA Fulfillment wanted to ensure that our clients receive the best possible shipping charges</p>
+                                <p class="p testimonial-card__p">The system increased our package manifesting by three times.</p>
+                            </div>
+                        </div>
         </div>
     </section>
+
     <!-- NEWS -->
 
     <section class="news container">
@@ -323,6 +330,8 @@
 
 
         <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

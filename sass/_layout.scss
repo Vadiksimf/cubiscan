@@ -53,6 +53,59 @@
 }
 
 
+////////////////////////////////////////////////////
+//----------------SWIPER-------------------------
+
+
+
+// .swiper-container {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .swiper-slide {
+//     text-align: center;
+//     font-size: 18px;
+//     background: #fff;
+
+//     /* Center slide text vertically */
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: -webkit-flex;
+//     display: flex;
+//     -webkit-box-pack: center;
+//     -ms-flex-pack: center;
+//     -webkit-justify-content: center;
+//     justify-content: center;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     -webkit-align-items: center;
+//     align-items: center;
+// }
+
+// .swiper-pagination {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 44px;
+//     bottom: -10px;
+//     position: relative;
+//     flex: 0 0 100%;
+// }
+
+// .swiper-bullet {
+//     width: 10px;
+//     height: 10px;
+//     border: 2px solid #FFBB01;
+//     border-radius: 50%;
+//     display: inline-block;
+//     margin-left: 5px;
+//     margin-right: 5px;
+// }
+
+// .swiper-bullet-active {
+//     background-color: #FFBB01;
+// }
 
 
 
@@ -64,121 +117,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.heaer {
-    font-size: 1.4rem;
-    height: 7rem;
-    background-color: #fff;
-    border-bottom: var(--border-bottom);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1.5rem;
-
-    
-    @media only screen and (max-width: $bp-tiny) {
-        padding: 0;
-        flex-wrap: wrap;
-        height: 12rem;
-        align-content: space-around; // Выравнивание блоков между собой при переносе
-    }
-
-}
-
-.conte {
-    display: flex;
-    min-height: 50rem;
-
-    @media only screen and (max-width: $bp-middle) {
-       flex-direction: column;
-    }
-}
-
-.sideb {
-    background-color: var(--color-grey-dark-1);
-
-    flex: 0 0 18%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.hotel-iew {
-
-    background-color: #fff;
-
-    flex: 1; // flex-grow: 1;
-}
-
-
-.detil {
-    font-size: 1.4rem;
-    display: flex;
-    padding: 4.5rem;
-    background-color: var(--color-grey-light-1);
-    border-bottom: var(--border-bottom);
-
-    @media only screen and (max-width: $bp-middle) {
-        padding: 3rem;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-        flex-direction: column;
-    }
-
-    @media only screen and (max-width: $bp-tinyest) {
-        padding: 1rem;
-    }
-}
-
-.descriptn {
-    background-color: #fff;
-    flex: 0 0 60%;  // Контейнер занимает 60% пространства
-    margin-right: 4.5rem;
-    padding: 3rem;
-    box-shadow: var(--shadow-ligth);
-
-    @media only screen and (max-width: $bp-middle) {
-        margin-right: 2rem;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
-}
-
-.user-revis {
-    flex: 1;  // Контейнер занимает оставшееся пространстро, в блоке detail
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
